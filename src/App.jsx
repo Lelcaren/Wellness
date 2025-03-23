@@ -5,9 +5,11 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import Contact from "./pages/Contact";
-import Services from "./pages/Services";
 import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+
+
 
 function App() {
   const action = useNavigationType();
