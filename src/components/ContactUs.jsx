@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 const ContactUs = ({ className = "" }) => {
   return (
     <section
-      className={`w-full max-w-[1400px] mx-auto bg-whitesmoke-200 overflow-hidden flex flex-col items-start justify-start 
-        py-28 px-16 gap-20 text-left text-base text-color-scheme-1-text font-heading-desktop-h6 
+      className={`w-full max-w-[1440px] mx-auto bg-whitesmoke-200 overflow-hidden flex flex-col items-start justify-start 
+        py-28 px-16 box-border gap-20 text-left text-base text-color-scheme-1-text font-heading-desktop-h6 
         lg:px-12 lg:py-24 lg:gap-16 
         md:px-10 md:py-20 md:gap-12 
         sm:px-8 sm:py-16 sm:gap-10 
@@ -37,20 +37,20 @@ const ContactUs = ({ className = "" }) => {
         </div>
       </div>
 
-      {/* Content Section */}
+      {/* Content and Image Section */}
       <div
-        className={`self-stretch flex flex-row items-start justify-start gap-20 flex-wrap 
-          lg:gap-16 
-          md:gap-12 
-          sm:gap-10 
-          xs:gap-6`}
+        className={`self-stretch flex flex-row items-start justify-between gap-20 
+          lg:gap-16 lg:flex-row 
+          md:gap-12 md:flex-row 
+          sm:flex-col sm:items-center sm:gap-10 
+          xs:flex-col xs:items-center xs:gap-6`}
       >
         {/* Contact Information */}
         <div
           className={`flex flex-col items-start justify-start gap-10 w-[400px] 
             lg:w-[350px] 
             md:w-[300px] 
-            sm:w-[100%] 
+            sm:w-full 
             xs:w-full xs:gap-6`}
         >
           <Content
@@ -109,16 +109,18 @@ const ContactUs = ({ className = "" }) => {
         </div>
 
         {/* Image Section */}
-        <img
-          className={`w-[832px] max-h-full object-cover rounded-lg shadow-md 
-            lg:w-[700px] 
-            md:w-[600px] 
-            sm:w-full sm:max-w-[500px] 
-            xs:w-full xs:max-w-[300px]`}
-          loading="lazy"
-          alt="Placeholder"
-          src="/placeholder-image2@2x.png"
-        />
+        <div className="w-full flex justify-center items-center lg:w-auto md:w-auto sm:w-full xs:w-full">
+          <img
+            className={`w-full max-w-[832px] h-auto object-cover rounded-lg shadow-md 
+              lg:max-w-[700px] 
+              md:max-w-[600px] 
+              sm:max-w-[500px] 
+              xs:max-w-[300px] xs:h-auto`}
+            loading="lazy"
+            alt="Placeholder"
+            src="/placeholder-image2@2x.png"
+          />
+        </div>
       </div>
     </section>
   );
@@ -129,3 +131,5 @@ ContactUs.propTypes = {
 };
 
 export default ContactUs;
+
+
