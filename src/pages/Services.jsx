@@ -89,20 +89,20 @@ const Services = () => {
       <OrganicKitchen
         heading="Cultivate Your Own Organic Kitchen Garden for a Healthier Lifestyle"
         text="Discover the joy of growing your own organic food right at home. Our expert tips on sustainable gardening and meal planning will empower you to create a thriving kitchen garden."
-        placeholderImage="/placeholder-image-1@2x.png"
+        placeholderImage="/fruits1.jpg"
       />
       
       <IdealWeight
         heading="Achieve Your Ideal Weight Naturally"
         text="Experience weight management that prioritizes your health without the stress of calorie counting. Embrace nutrient-rich foods and mindful eating practices to foster a sustainable lifestyle."
         button1="Start"
-        placeholderImage="/placeholder-image-2@2x.png"
+        placeholderImage="/ideal weight.jpg"
       />
       
       <OrganicKitchen
         heading="Harness the Healing Power of Food for Chronic Illness Management"
         text="Discover how food can be a powerful ally in managing chronic conditions like diabetes and high blood pressure. Our approach emphasizes natural detox methods and nutrient-rich diets to support your health journey."
-        placeholderImage="/placeholder-image-3@2x.png"
+        placeholderImage="/fruits2.jpg"
       />
       
       <TransformMeals />
@@ -196,139 +196,157 @@ const Services = () => {
 </section>
       
 <section
-  className={`w-full max-w-[1440px] mx-auto bg-whitesmoke-100 overflow-hidden flex flex-col items-center justify-start py-28 px-16 box-border text-left text-base text-color-scheme-1-text font-heading-desktop-h6 
-    lg:px-12 lg:py-24
-    md:px-10 md:py-20
-    sm:px-8 sm:py-16
-    xs:px-4 xs:py-10`}
->
-  <div
-    className={`self-stretch flex flex-row items-center justify-center flex-wrap gap-20 
-      lg:gap-16
-      md:gap-12
-      sm:gap-10
-      xs:flex-col xs:gap-6 xs:items-center`}
-  >
-    {/* Text Section */}
-    <div
-      className={`flex-1 flex flex-col items-start justify-start gap-6 min-w-[400px] max-w-[600px] 
-        lg:min-w-[350px]
-        md:min-w-[300px]
-        sm:min-w-full
-        xs:min-w-0 xs:w-full xs:gap-4 xs:items-center`}
+      className={`w-full max-w-[1440px] mx-auto bg-whitesmoke-100 overflow-hidden flex flex-col items-center justify-start py-28 px-16 box-border text-left text-base text-color-scheme-1-text font-heading-desktop-h6 
+        xl:px-16 xl:py-28
+        lg:px-12 lg:py-24
+        md:px-8 md:py-20
+        sm:px-6 sm:py-16
+        xs:px-4 xs:py-8`}
     >
-      <div className="self-stretch flex flex-col items-center justify-start gap-6 xs:gap-4">
-        <div className="self-stretch flex flex-col items-center justify-start gap-4 xs:gap-2">
-          <div className="flex flex-row items-center justify-center">
-            <div className="relative leading-[150%] font-semibold">
-              Wellness
+      <div
+        className={`self-stretch flex flex-row items-center justify-between flex-wrap gap-20 
+          xl:gap-20
+          lg:gap-16
+          md:gap-12
+          sm:gap-8
+          xs:flex-col xs:gap-6`}
+      >
+        {/* Text Section */}
+        <div
+          className={`flex-1 flex flex-col items-start justify-start gap-8 min-w-[500px]
+            xl:min-w-[450px]
+            lg:min-w-[400px]
+            md:min-w-[300px]
+            sm:min-w-[280px]
+            xs:min-w-0 xs:w-full xs:gap-4 xs:items-center`}
+        >
+          <div className="self-stretch flex flex-col items-start justify-start gap-6 xs:items-center xs:gap-4">
+            <div className="self-stretch flex flex-col items-start justify-start gap-4 xs:items-center xs:gap-2">
+              <div className="flex flex-row items-center justify-start xs:justify-center">
+                <div className="relative leading-[150%] font-semibold text-lg text-blue-600">
+                  Wellness
+                </div>
+              </div>
+              <div
+                className={`self-stretch flex flex-col items-start justify-start gap-4 xs:items-center xs:gap-2`}
+              >
+                <h1
+                  className={`m-0 self-stretch relative text-5xl leading-[120%] font-bold 
+                    xl:text-5xl
+                    lg:text-4xl
+                    md:text-3xl
+                    sm:text-2xl
+                    xs:text-xl xs:text-center`}
+                >
+                  Experience Our Comprehensive In-House Wellness Services
+                </h1>
+                <p
+                  className={`text-lg leading-[150%] text-gray-700 max-w-[540px]
+                    lg:text-base
+                    md:text-base
+                    sm:text-sm
+                    xs:text-sm xs:text-center`}
+                >
+                  Our in-house wellness services are designed to rejuvenate your
+                  body and mind. Discover personalized treatments that promote
+                  healing and relaxation.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex flex-row items-start justify-start gap-6 flex-wrap">
+              <div
+                className={`flex flex-col items-start justify-start gap-3 bg-white p-6 rounded-lg shadow-sm max-w-[240px] transition-all hover:shadow-md
+                  lg:p-5
+                  md:p-4
+                  sm:p-4 sm:max-w-[200px]
+                  xs:items-center xs:max-w-full xs:w-full`}
+              >
+                <b
+                  className={`leading-[140%] text-lg
+                    md:text-base
+                    xs:text-base`}
+                >
+                  Detox Therapy
+                </b>
+                <p
+                  className={`text-base leading-[150%] text-gray-600
+                    md:text-sm
+                    xs:text-sm xs:text-center`}
+                >
+                  A guided detox plan for deep cleansing and revitalization.
+                </p>
+              </div>
+              <div
+                className={`flex flex-col items-start justify-start gap-3 bg-white p-6 rounded-lg shadow-sm max-w-[240px] transition-all hover:shadow-md
+                  lg:p-5
+                  md:p-4
+                  sm:p-4 sm:max-w-[200px]
+                  xs:items-center xs:max-w-full xs:w-full`}
+              >
+                <b
+                  className={`leading-[140%] text-lg
+                    md:text-base
+                    xs:text-base`}
+                >
+                  Hydrotherapy Benefits
+                </b>
+                <p
+                  className={`text-base leading-[150%] text-gray-600
+                    md:text-sm
+                    xs:text-sm xs:text-center`}
+                >
+                  Water-based treatments to enhance relaxation and improve
+                  circulation.
+                </p>
+              </div>
             </div>
           </div>
+          {/* Buttons Section */}
           <div
-            className={`self-stretch flex flex-col items-center justify-start text-29xl 
-              lg:text-5xl
-              md:text-4xl
-              sm:text-3xl
-              xs:text-xl xs:leading-[120%]`}
+            className={`flex flex-row items-center justify-start gap-6 
+              md:gap-4 
+              xs:justify-center xs:w-full xs:gap-3`}
           >
-            <h1
-              className={`m-0 self-stretch relative text-inherit leading-[120%] font-bold break-words 
-                lg:leading-[125%]
-                xs:text-center`}
-            >
-              Experience Our Comprehensive In-House Wellness Services
-            </h1>
-            <p
-              className={`text-lg leading-[150%] 
-                md:text-base
+            <button
+              className={`bg-blue-600 text-white px-8 py-3 rounded-lg font-medium text-base transition-all hover:bg-blue-700
+                md:px-6 md:py-2.5
                 sm:text-sm
-                xs:text-xs xs:leading-[140%] xs:text-center`}
+                xs:flex-1 xs:max-w-[160px]`}
             >
-              Our in-house wellness services are designed to rejuvenate your
-              body and mind. Discover personalized treatments that promote
-              healing and relaxation.
-            </p>
+              Book Now
+            </button>
+            <div className="flex flex-row items-center gap-2 cursor-pointer group">
+              <div className="relative leading-[150%] text-blue-600 group-hover:underline xs:text-sm">
+                Learn More
+              </div>
+              <svg 
+                className="h-5 w-5 text-blue-600 transition-transform group-hover:translate-x-1" 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 20 20" 
+                fill="currentColor"
+              >
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </div>
           </div>
         </div>
-        <div className="flex flex-row items-start justify-center gap-6 flex-wrap xs:gap-4">
-          <div
-            className={`flex flex-col items-center justify-start gap-4 min-w-[200px]
-              sm:min-w-[180px]
-              xs:min-w-[150px]`}
-          >
-            <b
-              className={`text-center leading-[140%] 
-                md:text-base
-                xs:text-xs`}
-            >
-              Detox Therapy
-            </b>
-            <p
-              className={`text-center text-base leading-[150%] 
-                md:text-sm
-                xs:text-xs`}
-            >
-              A guided detox plan for deep cleansing and revitalization.
-            </p>
-          </div>
-          <div
-            className={`flex flex-col items-center justify-start gap-4 min-w-[200px]
-              sm:min-w-[180px]
-              xs:min-w-[150px]`}
-          >
-            <b
-              className={`text-center leading-[140%] 
-                md:text-base
-                xs:text-xs`}
-            >
-              Hydrotherapy Benefits
-            </b>
-            <p
-              className={`text-center text-base leading-[150%] 
-                md:text-sm
-                xs:text-xs`}
-            >
-              Water-based treatments to enhance relaxation and improve
-              circulation.
-            </p>
-          </div>
-        </div>
-      </div>
-      {/* Buttons Section */}
-      <div
-        className={`flex flex-row items-center justify-center gap-6 
-          md:gap-4 
-          xs:flex-col xs:gap-3 xs:w-full`}
-      >
-        <Button
-          alternate={false}
-          iconPosition="No icon"
-          small={false}
-          style="Secondary"
-          button="Book"
-          className="xs:w-[90%]"
-        />
-        <div className="flex flex-row items-center gap-2 xs:py-1">
-          <div className="relative leading-[150%] xs:text-sm">Learn</div>
+        
+        {/* Image Section */}
+        <div className="flex-1 min-w-[500px] xl:min-w-[450px] lg:min-w-[400px] md:min-w-[300px] xs:min-w-0 xs:w-full flex items-center justify-center">
           <img
-            className="h-6 w-6 xs:h-5 xs:w-5"
-            alt=""
-            src="/icon--chevronright.svg"
+            className={`h-[600px] w-full object-cover rounded-lg shadow-lg transition-all hover:shadow-xl
+              xl:h-[560px]
+              lg:h-[480px]
+              md:h-[400px]
+              sm:h-[320px]
+              xs:h-[220px]`}
+            alt="Wellness Illustration"
+            src="/massage.jpg"
           />
         </div>
       </div>
-    </div>
-    {/* Image Section */}
-    <img
-      className={`h-[640px] flex-1 object-cover rounded-lg shadow-lg
-        lg:h-[500px]
-        sm:h-[420px]
-        xs:h-auto xs:max-h-[240px] xs:w-[90%]`}
-      alt="Wellness Illustration"
-      src="/placeholder-image-5@2x.png"
-    />
-  </div>
-</section>
+    </section>
 
       <CtaServices />
       

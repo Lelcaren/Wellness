@@ -6,6 +6,7 @@ const ContactUs = ({ className = "" }) => {
     <section
       className={`w-full max-w-[1440px] mx-auto bg-whitesmoke-200 overflow-hidden flex flex-col items-start justify-start 
         py-28 px-16 box-border gap-20 text-left text-base text-color-scheme-1-text font-heading-desktop-h6 
+        xl:px-20 xl:py-32
         lg:px-12 lg:py-24 lg:gap-16 
         md:px-10 md:py-20 md:gap-12 
         sm:px-8 sm:py-16 sm:gap-10 
@@ -19,6 +20,7 @@ const ContactUs = ({ className = "" }) => {
         <div className="self-stretch flex flex-col items-start justify-start gap-6 text-29xl">
           <h1
             className={`m-0 self-stretch relative text-inherit leading-[120%] font-bold 
+              xl:text-5xl xl:leading-[60px]
               lg:text-19xl lg:leading-[46px] 
               md:text-13xl md:leading-[38px] 
               sm:text-10xl sm:leading-[35px] 
@@ -28,11 +30,12 @@ const ContactUs = ({ className = "" }) => {
           </h1>
           <p
             className={`self-stretch relative text-lg leading-[150%] 
+              xl:text-xl
               md:text-base 
               sm:text-sm 
               xs:text-xs`}
           >
-            We’re here to support your wellness journey.
+            We're here to support your wellness journey.
           </p>
         </div>
       </div>
@@ -40,6 +43,7 @@ const ContactUs = ({ className = "" }) => {
       {/* Content and Image Section */}
       <div
         className={`self-stretch flex flex-row items-start justify-between gap-20 
+          xl:gap-24
           lg:gap-16 lg:flex-row 
           md:gap-12 md:flex-row 
           sm:flex-col sm:items-center sm:gap-10 
@@ -48,6 +52,7 @@ const ContactUs = ({ className = "" }) => {
         {/* Contact Information */}
         <div
           className={`flex flex-col items-start justify-start gap-10 w-[400px] 
+            xl:w-[450px]
             lg:w-[350px] 
             md:w-[300px] 
             sm:w-full 
@@ -76,6 +81,7 @@ const ContactUs = ({ className = "" }) => {
               <div className="flex flex-col items-start justify-start gap-2">
                 <b
                   className={`text-lg font-bold leading-[140%] 
+                    xl:text-xl
                     md:text-base 
                     xs:text-sm`}
                 >
@@ -83,6 +89,7 @@ const ContactUs = ({ className = "" }) => {
                 </b>
                 <p
                   className={`text-base leading-[150%] 
+                    xl:text-lg
                     md:text-sm 
                     xs:text-xs`}
                 >
@@ -92,6 +99,7 @@ const ContactUs = ({ className = "" }) => {
               <div className="flex flex-row items-center justify-center gap-2">
                 <p
                   className={`relative leading-[150%] text-blue-600 underline 
+                    xl:text-lg
                     md:text-sm 
                     xs:text-xs`}
                 >
@@ -109,16 +117,17 @@ const ContactUs = ({ className = "" }) => {
         </div>
 
         {/* Image Section */}
-        <div className="w-full flex justify-center items-center lg:w-auto md:w-auto sm:w-full xs:w-full">
+        <div className="flex-1 flex justify-center items-center lg:flex-1 md:flex-1 sm:w-full xs:w-full">
           <img
             className={`w-full max-w-[832px] h-auto object-cover rounded-lg shadow-md 
+              xl:max-w-full
               lg:max-w-[700px] 
               md:max-w-[600px] 
               sm:max-w-[500px] 
               xs:max-w-[300px] xs:h-auto`}
             loading="lazy"
             alt="Placeholder"
-            src="/placeholder-image2@2x.png"
+            src="/footer.jpg"
           />
         </div>
       </div>

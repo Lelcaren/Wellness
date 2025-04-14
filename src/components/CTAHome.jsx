@@ -40,7 +40,7 @@ const CTAHome = ({ className = "" }) => {
           className="h-[400px] flex-1 relative max-w-full overflow-hidden object-cover min-w-[400px] lg:h-[350px] md:h-[300px] sm:h-auto sm:min-w-full"
           loading="lazy"
           alt=""
-          src="/placeholder-image-41@2x.png"
+          src="/cta.jpg"
         />
       </div>
     </section>

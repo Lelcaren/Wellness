@@ -24,12 +24,17 @@ const Contact = () => {
       
       {/* Map Section */}
       <section className="w-full max-w-[1440px] bg-whitesmoke-200 overflow-hidden flex flex-col items-center justify-start py-16 md:py-20 lg:py-28 px-4 md:px-8 lg:px-16 box-border gap-8 md:gap-12 lg:gap-20 text-center text-color-scheme-1-text">
-        <img
-          className="w-full max-w-[1312px] h-auto object-cover"
-          loading="lazy"
-          alt=""
-          src="/placeholder-image-12@2x.png"
-        />
+  <div className="w-full max-w-[1312px] h-[400px]">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.7462527791244!2d-122.41941638468157!3d37.77492997975944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858085d13a409d%3A0x97ef3aec5f2e029f!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1649959753409!5m2!1sen!2sus"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
         
         {/* Contact Info Cards */}
         <div className="w-full max-w-[1400px] bg-whitesmoke-200 overflow-hidden flex flex-col items-start justify-start py-8 md:py-16 lg:py-28 px-4 md:px-8 lg:px-16 box-border">

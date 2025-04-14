@@ -9,8 +9,6 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 
-
-
 function App() {
   const action = useNavigationType();
   const location = useLocation();
@@ -28,16 +26,16 @@ function App() {
 
     switch (pathname) {
       case "/":
-        title = "";
-        metaDescription = "";
+        title = "Home";
+        metaDescription = "Welcome to our homepage.";
         break;
       case "/services":
-        title = "";
-        metaDescription = "";
+        title = "Services";
+        metaDescription = "Explore the services we offer.";
         break;
-      case "/home":
-        title = "";
-        metaDescription = "";
+      case "/contact":
+        title = "Contact Us";
+        metaDescription = "Get in touch with us.";
         break;
     }
 
@@ -57,10 +55,11 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Contact />} />
+      <Route path="/" element={<Home />} />
       <Route path="/services" element={<Services />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }
+
 export default App;

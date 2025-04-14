@@ -37,8 +37,8 @@ const IdealWeight = ({
               </p>
             </div>
           </div>
-          {/* Buttons */}
-          <div className="flex flex-row items-start justify-start gap-4 sm:gap-6 flex-wrap sm:justify-center">
+          {/* Buttons - Fixed alignment */}
+          <div className="flex flex-row items-center justify-start gap-4 sm:gap-6 flex-wrap sm:justify-center">
             <Button
               alternate={false}
               iconPosition="No icon"
@@ -46,14 +46,14 @@ const IdealWeight = ({
               style="Secondary"
               button="Learn"
             />
-            <div className="overflow-hidden flex flex-row items-center justify-center gap-2 text-blue-600 font-semibold">
+            <button className="flex flex-row items-center justify-center gap-2 text-blue-600 font-semibold cursor-pointer">
               <span>{button1}</span>
               <img
                 className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6"
                 alt="Chevron Icon"
                 src="/icon--chevronright.svg"
               />
-            </div>
+            </button>
           </div>
         </div>
 
