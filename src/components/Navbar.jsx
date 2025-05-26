@@ -1,9 +1,10 @@
 import { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const Navbar = ({ className = "", companyLogo, navLinksMargin }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navLinksStyle = useMemo(() => {
     return {
@@ -25,8 +26,16 @@ const Navbar = ({ className = "", companyLogo, navLinksMargin }) => {
         "bg-white border border-blue-500 text-blue-500 hover:bg-blue-50 hover:shadow-sm",
     };
 
+    const handleClick = () => {
+      if (button === "Join") {
+        navigate("/contact");
+      } else if (button === "Learn") {
+        navigate("/services");
+      }
+    };
+
     return (
-      <button className={`${baseClasses} ${buttonStyles[style]} ${className}`}>
+      <button onClick={handleClick} className={`${baseClasses} ${buttonStyles[style]} ${className}`}>
         {button}
       </button>
     );

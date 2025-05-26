@@ -11,11 +11,11 @@ const Footer = ({ className = "", footerBackgroundColor, companyLogo }) => {
 
   return (
     <section
-      className={`w-full max-w-[1440px] mx-auto overflow-hidden flex flex-col items-center justify-start py-10 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-16 box-border gap-12 text-left text-sm text-color-scheme-1-text font-heading-desktop-h6 ${className}`}
+      className={`w-full overflow-hidden flex flex-col items-center justify-start py-10 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 2xl:px-24 box-border gap-12 text-left text-sm text-color-scheme-1-text font-heading-desktop-h6 ${className}`}
       style={footerStyle}
     >
       {/* Main Footer Content */}
-      <div className="self-stretch flex flex-col md:flex-row items-center justify-between gap-8 lg:gap-16">
+      <div className="w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8 lg:gap-16">
         {/* Logo */}
         <div className="flex justify-center md:justify-start">
           <Link to="/home" className="block">
@@ -86,7 +86,7 @@ const Footer = ({ className = "", footerBackgroundColor, companyLogo }) => {
       </div>
 
       {/* Copyright Section */}
-      <footer className="self-stretch flex flex-col items-center justify-start gap-6">
+      <footer className="w-full max-w-[1440px] mx-auto flex flex-col items-center justify-start gap-6">
         <div className="self-stretch relative border-color-scheme-1-text border-solid border-t-[1px] opacity-20 box-border h-px" />
         
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4">

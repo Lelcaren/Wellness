@@ -9,6 +9,7 @@ const IdealWeight = ({
   text,
   button1,
   placeholderImage,
+  onButtonClick,
 }) => {
   const idealWeightStyle = useMemo(() => {
     return {
@@ -18,12 +19,12 @@ const IdealWeight = ({
 
   return (
     <section
-      className={`w-full max-w-full bg-whitesmoke-100 overflow-hidden flex flex-col items-start justify-start py-16 px-8 sm:py-20 sm:px-12 md:py-24 md:px-16 lg:py-28 lg:px-20 xl:py-32 xl:px-28 box-border text-left text-base text-color-scheme-1-text font-heading-desktop-h6 ${className}`}
+      className={`w-full bg-whitesmoke-100 overflow-hidden flex flex-col items-start justify-start py-16 px-8 sm:py-20 sm:px-12 md:py-24 md:px-16 lg:py-28 lg:px-20 xl:py-32 xl:px-28 2xl:px-32 box-border text-left text-base text-color-scheme-1-text font-heading-desktop-h6 ${className}`}
       style={idealWeightStyle}
     >
-      <div className="self-stretch flex flex-row items-center justify-start flex-wrap content-center gap-12 sm:gap-16 lg:gap-20 sm:items-center sm:justify-center">
+      <div className="w-full max-w-[1440px] mx-auto flex flex-row items-center justify-start flex-wrap content-center gap-12 sm:gap-16 lg:gap-20 xl:gap-24 sm:items-center sm:justify-center">
         {/* Content Section */}
-        <div className="flex-1 flex flex-col items-start justify-start py-5 px-0 box-border gap-8 sm:gap-6 md:gap-8 min-w-[300px] max-w-[600px] lg:max-w-[650px] sm:min-w-full sm:items-center">
+        <div className="flex-1 flex flex-col items-start justify-start py-5 px-0 box-border gap-8 sm:gap-6 md:gap-8 min-w-[300px] max-w-[600px] lg:max-w-[650px] xl:max-w-[700px] sm:min-w-full sm:items-center">
           <div className="self-stretch flex flex-col items-start justify-start gap-6 sm:items-center">
             <div className="relative leading-[150%] font-semibold text-lg sm:text-base md:text-xl lg:text-2xl xl:text-2xl text-left sm:text-center">
               Transform
@@ -46,7 +47,10 @@ const IdealWeight = ({
               style="Secondary"
               button="Learn"
             />
-            <button className="flex flex-row items-center justify-center gap-2 text-blue-600 font-semibold cursor-pointer">
+            <button 
+              className="flex flex-row items-center justify-center gap-2 text-blue-600 font-semibold cursor-pointer"
+              onClick={onButtonClick}
+            >
               <span>{button1}</span>
               <img
                 className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6"
@@ -75,6 +79,7 @@ IdealWeight.propTypes = {
   button1: PropTypes.string,
   placeholderImage: PropTypes.string,
   idealWeightBackgroundColor: PropTypes.string, // Style props
+  onButtonClick: PropTypes.func,
 };
 
 export default IdealWeight;

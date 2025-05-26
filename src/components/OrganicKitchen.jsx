@@ -8,13 +8,13 @@ const OrganicKitchen = ({
 }) => {
   return (
     <section
-      className={`w-full max-w-[1400px] mx-auto bg-whitesmoke-100 overflow-hidden flex flex-col items-start justify-start py-28 px-16 box-border text-left text-21xl text-color-scheme-1-text font-heading-desktop-h6
-        lg:max-w-[1200px] lg:px-12 lg:py-24
+      className={`w-full bg-whitesmoke-100 overflow-hidden flex flex-col items-start justify-start py-28 px-16 box-border text-left text-21xl text-color-scheme-1-text font-heading-desktop-h6
+        lg:px-12 lg:py-24
         md:pt-20 md:pb-20 md:box-border md:text-13xl md:leading-[38px]
         sm:gap-10 sm:px-8 sm:box-border sm:py-16
         xs:gap-5 xs:pt-10 xs:pb-10 xs:px-4 xs:box-border ${className}`}
     >
-      <div className="self-stretch flex flex-row items-center justify-between flex-wrap gap-20
+      <div className="w-full max-w-[1400px] mx-auto flex flex-row items-center justify-between flex-wrap gap-20
         lg:gap-16
         md:gap-12
         sm:gap-10 sm:justify-center
